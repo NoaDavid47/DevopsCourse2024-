@@ -1,0 +1,12 @@
+---
+- name: Installing Mysql  and dependencies
+  yum:
+    name: mysql
+    state: present
+    
+
+- name: start and enable mysql service
+  service:
+    name: mysql
+    state: started
+    enabled: yes

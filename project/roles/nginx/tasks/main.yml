@@ -1,0 +1,33 @@
+---
+
+
+- name: Install nginx
+  yum:
+    name: nginx
+    state: latest
+    update_cache: yes
+
+- name: Ensure nginx is running
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

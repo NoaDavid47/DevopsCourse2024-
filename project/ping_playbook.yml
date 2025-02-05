@@ -1,0 +1,6 @@
+- name: ping to mysql
+  hosts: mysql
+
+  tasks: 
+    - name: ping dynamic inventory
+      ping:

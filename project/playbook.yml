@@ -1,0 +1,15 @@
+- name: gathering the tags
+  hosts: mysql
+  gather_facts: yes
+  become: true
+  roles:
+    - mysql
+
+
+    
+    
+
+
+
+
+

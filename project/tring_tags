@@ -1,0 +1,36 @@
+- name: Print instance public IPs
+  debug:
+    msg: "Instance IP: {{ ansible_host }}"
+
+- name: Print instance public IPs
+  debug:
+    msg: "Instance tags: {{ tags }}"
+
+- name: retrive the hostname
+  command: hostname noa
+  register: result
+- debug:
+    msg: "{{ result.stdout }}"
+
+
+
+
+#- name: retrive the host vars
+ # debug:
+  #  var=hostvars[mysql]
+ # register: noa
+#- debug:
+#    msg: "{{ noa.stdout }}"
+
+
+ 
+
+
+
+
+
+
+
+nstance_info:
+    filters:
+          "tag:Name":
